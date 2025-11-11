@@ -1,17 +1,14 @@
 import sys
 
-if len(sys.argv) == 2:
+if len(sys.argv) >= 2:
+    script_name = sys.argv[0]
     temp = float(sys.argv[1])
-    print("User provided input:")
 else:
-    print("No input found! Using default temperature...")
-    temp = 0  
-
-print("Temperature:", temp)
+    temp = 25.0
 
 if temp < 15:
-    print("COLD")
-elif temp >= 30:
-    print("NORMAL TEMPERATURE")
+    print("cold")
+elif temp <= 30:
+    print("normal")
 else:
-    print("TOO HOT!")
+    print("hot")
