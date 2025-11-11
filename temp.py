@@ -1,11 +1,10 @@
 import sys
 
 if len(sys.argv) == 2:
-    filename = sys.argv[0]
     temp = int(sys.argv[1])
     print("User provided input:")
 else:
-    print("No input found!")
+    print("No input found! Using default temperature...")
     temp = 0  
 
 print("Temperature:", temp)
